@@ -67,7 +67,9 @@ jobs:
           MLFLOW_TRACKING_URI: ./mlruns  # mlflow tracking uri
           MODEL_PATH: ./ml/model.pkl  # model save path
         run: |
-          python -c "from scheduler.retrain_job import run_pipeline; run_pipeline()"
+          python data/reload_data.py
+          python etl/load.py
+          python ml/train.py
 
       - name: Run pytest  # run all tests
         env:
