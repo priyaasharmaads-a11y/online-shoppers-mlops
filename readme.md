@@ -31,11 +31,13 @@ Built as a production ML system instead of a notebook-only workflow.
 ## Architecture
 
 ```
-CSV  →  MySQL  →  ETL  →  PostgreSQL  →  Preprocessing  →  Model Training
-                                                                   ↓
-Render ← Docker ← GitHub Actions CI/CD ← FastAPI ← MLflow Tracking
-   ↓
-Evidently AI (Drift Monitoring)
+## System Architecture
+
+<div align="center">
+
+<img src="assets/architecture.png" alt="architecture" width="950"/>
+
+</div>
 ```
 
 Every stage is automated. Push to `main` → tests run → Docker builds → deploys to Render.
