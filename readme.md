@@ -35,7 +35,7 @@ Built as a production ML system instead of a notebook-only workflow.
 
 <div align="center">
 
-<img src="assets/architecture.png" alt="architecture" width="950"/>
+<img src="assets/assets/System Architecture.drawio.png" alt="architecture" width="950"/>
 
 </div>
 
